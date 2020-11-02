@@ -15,18 +15,64 @@ body {
 
 /* Style the header */
 header {
-  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
-  padding: 30px;
+  background-image: url("Imagenes_web/Encabezado.JPG");
+  padding: 55px;
   text-align: center;
-  font-size: 35px;
-  color: white;
+  font-size: 40px;
+  color: #F0B429;
+  font-family: Franklin Gothic Heavy;
 }
 
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 20%;
+  padding: 20px;
+}
+/*menú opciones*/
+        #menu * { list-style:none;}
+        #menu li{ line-height:180%;}
+        #menu li a{color:#222; text-decoration:none;}
+        #menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+        #menu input[name="list"] {
+	        position: absolute;
+	        left: -1000em;
+	        }
+        #menu label:before{ content:"\025b8"; margin-right:4px;}
+        #menu input:checked ~ label:before{ content:"\025be";}
+        #menu .interior{display: none;}
+        #menu input:checked ~ ul{display:block;
  </style>
 
   </head>
 
   <body>
-        <header>Ljkjkbjb </header>
+        <header>CSS3: Estilos internos y externos, selectores CSS </header>
+        <section>
+            <nav>
+                   <ul id="menu">
+                   <li><a href="#r">Inicio</a></li>
+                   <li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">Conceptos</label>
+                      <ul class="interior">
+                         <li><a href="#r">talvez</a></li> 
+                      </ul>
+                   </li>
+                   <li><input type="checkbox" name="list" id="nivel1-3" checked=""><label for="nivel1-3">Recursos</label>
+                      <ul class="interior">
+                         <li><a href="#r">Estilos Internos y Externo</a></li> 
+                         <li><a href="#r">Selectores</a></li> 
+                      </ul>
+                   </li>
+                   <li><input type="checkbox" name="list" id="nivel1-4" checked=""><label for="nivel1-4">Autoevaluacion</label>
+                      <ul class="interior">
+                         <li><a href="#r">Opcion 1</a></li> 
+                         <li><a href="#r">Opcion 2</a></li> 
+                      </ul>
+                   </li>
+                   <li><a href="#r">Autor</a></li>
+                </ul>
+            </nav>
+
+        </section>
    </body>
 </html>
