@@ -49,7 +49,7 @@ header {
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
+  float: Left;
 }
 /*menú opciones*/
         #menu * { list-style:none;}
