@@ -1,0 +1,185 @@
+﻿/* Style the header */
+header {
+  background-image: url("Imagenes_web/Encabezado.JPG");
+  padding: 55px;
+  text-align: center;
+  font-size: 40px;
+  color: #F0B429;
+  font-family: Franklin Gothic Heavy;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+.menu_conceptos {
+  float: right;
+}
+/*menu_conceptos*/
+       .menu * { list-style:none;}
+        .menu .Opciones{ line-height:180%;}
+        .menu .Opciones a{color:#222; text-decoration:none;}
+        .menu .Opciones a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+        .menu input[name="list"] {
+	        position: absolute;
+	        left: -1000em;
+	        }
+        .menu label:before{ content:"\025b8"; margin-right:4px;}
+        .menu input:checked ~ label:before{ content:"\025be";}
+        .menu .interior{display: none;}
+        .menu input:checked ~ ul {display:block;}
+
+
+/*GALERIAAAAAA*/
+ul, li {
+    padding: 20;
+    margin: 0;
+    list-style: none inside;
+}
+ul.slider {
+    position:relative; *//*Necesitamos que el ul sea relativo*/
+}
+ul.slider li {
+    opacity: 0; 
+    transition: opacity .5s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin:50px;
+    padding:50px;
+    /*border:2px solid red;
+    background:#fff;*/
+}
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}                                                    
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+}                                                    
+.Galeria {
+    position:relative;
+    top:100px;
+    left:50px;
+}
+                                                                    
+body, html {             
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}                                                          
+
+ul, li {
+    box-sizing: border-box;
+}                                            
+ul.slider {
+    padding: 210px;
+}                                                
+
+ul.slider li {
+    width: 75vw;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: gray;                               
+    opacity: 0; 
+    transition: opacity .5s;
+  /* padding-top 30vh;*/
+    font-family: Franklin Gothic Book;
+    font-size: 15px;
+    text-align: justify;
+}                                                      
+/*color*/                                                   
+#slide1 {
+    background-color: #00324b;
+    color: #fff;
+}                                              
+
+#slide2 {
+    background-color: #65bce8;
+    color: #00324b;
+}
+
+#slide3 {
+    background-color: #f90;
+    color: #00324b;
+}
+
+#slide4 {
+    background-color: #00324b;
+    color: #65bce8;
+}
+
+#slide5 {
+    background-color: #65bce8;
+    color: #00324b;
+}                                                    
+
+.Galeria {
+    width: 50vw;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f1f2f3;
+}
+
+.Galeria ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Galeria ul li {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    box-sizing: border:box;
+}
+
+.Galeria a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00324b;
+    font-family: Franklin Gothic Book;
+    line-height: 1.8;
+    flex-grow: 1;
+    text-align: center;
+    border-top: 5px solid #00324b;
+    border-right: 1px solid #00324b;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Galeria li:last-child a {
+    border-right: 0;
+}
+
+.Galeria a:hover {
+    background-color: #00324b;
+    color: #fff;
+    border-top-color: #65bce8;
+}
+
+.Galeria a:active {
+    border-top-color: #f90;
+    background: #f90;
+    color: #00324b;
+}
