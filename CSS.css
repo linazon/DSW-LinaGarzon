@@ -10,6 +10,8 @@ body {
             overflow-y: scroll; 
         } 
 
+
+
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
@@ -31,6 +33,9 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+.texto {
+  float: right
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
