@@ -7,6 +7,19 @@ header {
   color: #F0B429;
   font-family: Franklin Gothic Heavy;
 }
+
+
+.texto {
+  float: right
+}
+articule{
+    clear: both;
+}
+footer {
+clear: both;
+}
+
+
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
@@ -45,7 +58,7 @@ header {
 
 /*GALERIAAAAAA*/
 ul, li {
-    padding: 20;
+    padding: 10;
     margin: 0;
     list-style: none inside;
 }
@@ -100,7 +113,7 @@ ul.slider {
 
 ul.slider li {
     width: 75vw;
-    height: 60vh;
+    height: 75vh;
     margin: 0;
     padding: 0;
     border: 0;
@@ -140,7 +153,7 @@ ul.slider li {
 
 .Galeria {
     width: 50vw;
-    position: absolute;
+    position: relative;
     top: auto;
     right: 0;
     bottom: 0;
