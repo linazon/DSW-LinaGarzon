@@ -1,4 +1,21 @@
-﻿/* Style the header */
+﻿body {             
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Franklin Gothic Book;
+
+} 
+ html {             
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll; 
+} 
+
+/* Style the header */
 header {
   background-image: url("Imagenes_web/Encabezado.JPG");
   padding: 55px;
@@ -8,7 +25,10 @@ header {
   font-family: Franklin Gothic Heavy;
 }
 
-
+articule{
+    font-family: Franklin Gothic Book;
+              color: #005883;
+}
 .texto {
   float: right
 }
@@ -17,6 +37,19 @@ articule{
 }
 footer {
 clear: both;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align:justify;
+}
+h1{
+padding-left: 20px;
+font-family: Franklin Gothic Heavy;
+color: #F0B429;
+}
+h3, h4{
+padding-left: 20px;
 }
 
 
@@ -42,18 +75,36 @@ clear: both;
   float: right;
 }
 /*menu_conceptos*/
-       .menu * { list-style:none;}
-        .menu .Opciones{ line-height:180%;}
-        .menu .Opciones a{color:#222; text-decoration:none;}
-        .menu .Opciones a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
-        .menu input[name="list"] {
+        #menu * {  list-style-type: none;
+          margin: 0;
+          padding-left: 10px;
+          width: 200px;
+          background-color: #f1f1f1;}
+        /*#menu li{ line-height:180%;}*/
+        #menu li a{  display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;}
+
+         #menu li a.active {
+              background-color: #005883;
+              color: white;
+            }
+
+         #menu  li a:hover:not(.active) {
+              background-color: #F0B429;
+              color: white;}
+
+       /* #menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}*/
+        #menu input[name="list"] {
 	        position: absolute;
 	        left: -1000em;
 	        }
-        .menu label:before{ content:"\025b8"; margin-right:4px;}
-        .menu input:checked ~ label:before{ content:"\025be";}
-        .menu .interior{display: none;}
-        .menu input:checked ~ ul {display:block;}
+
+        #menu label:before{ content:"\025b8"; margin-right:4px;}
+        #menu input:checked ~ label:before{ content:"\025be";}
+        #menu .interior{display: none;}
+        #menu input:checked ~ ul{display:block;}
 
 
 /*GALERIAAAAAA*/
@@ -88,21 +139,7 @@ ul.slider li:target {
     left:50px;
 }
                                                                     
-body {             
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
 
-} 
- html {             
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: -moz-scrollbars-vertical; 
-    overflow-y: scroll; 
-} 
 
 ul, li {
     box-sizing: border-box;
