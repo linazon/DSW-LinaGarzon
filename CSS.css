@@ -12,7 +12,10 @@ body {
 p{
     text-align:justify;
 }
-
+footer {
+clear: both;
+background-color: #f1f1f1;
+}
 
 /* Create three unequal columns that floats next to each other */
 .column {
